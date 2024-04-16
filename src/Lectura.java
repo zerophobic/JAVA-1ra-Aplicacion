@@ -3,7 +3,6 @@ package src;
 import java.util.Scanner;
 
 public class Lectura {
-    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Escribe el nombre tu peícula favorita");
@@ -16,5 +15,7 @@ public class Lectura {
         System.out.println(pelicula);
         System.out.println(fechaDeLanzamiento);
         System.out.println(nota);
+
+        teclado.close();
     }
 }

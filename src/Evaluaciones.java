@@ -3,7 +3,6 @@ package src;
 import java.util.Scanner;
 
 public class Evaluaciones {
-    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         double nota = 0;
@@ -20,5 +19,7 @@ public class Evaluaciones {
             }
         }
         System.out.println("La media de evaluciones para Matrix es: " + mediaEvaluaciones / totalEvaluaciones);
+
+        teclado.close();
     }
 }
